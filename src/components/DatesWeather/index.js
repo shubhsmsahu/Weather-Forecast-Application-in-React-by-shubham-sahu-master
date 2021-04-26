@@ -11,7 +11,7 @@ const DatesWeather = ({ cityName }) => {
   };
   useEffect(() => {
     fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=cd9302366014401490f121004212204&q=${cityName}&days=10&aqi=no&alerts=no`
+      `https://api.weatherapi.com/v1/forecast.json?key=cd9302366014401490f121004212204&q=${cityName}&days=10&aqi=no&alerts=no`
     )
       .then((response) => response.json())
       .then((result) => {
